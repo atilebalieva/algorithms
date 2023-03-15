@@ -30,7 +30,7 @@ function lengthOfLastWord(s) {
   for (let i = 0; i < s.length; i++) {
     if (s[i] != " ") {
       word += s[i];
-    } else if (word.length > 1) {
+    } else if (word.length >= 1) {
       wordArr.push(word);
       word = "";
     }
