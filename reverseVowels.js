@@ -21,10 +21,7 @@ Constraints:
 1 <= s.length <= 3 * 105
 s consist of printable ASCII characters. */
 
-const string = "leetcode";
-
-const s = "aisal";
-
+/* Solution 
 function reverseVowels(str) {
   let arrOfvowels = ["a", "e", "i", "o", "u", "U", "O", "I", "E", "A"];
 
@@ -32,15 +29,11 @@ function reverseVowels(str) {
     if (arrOfvowels.includes(letter)) return letter;
   });
 
-  const name = str
+  return str
     .split("")
     .map((item) => {
-      log(item);
-      // return arrOfvowels.includes(item) ? (item = vowels.pop()) : item;
+      return arrOfvowels.includes(item) ? (item = vowels.pop()) : item;
     })
     .join("");
-
-  log(name);
 }
-
-log(reverseVowels("aisal"));
+*/
